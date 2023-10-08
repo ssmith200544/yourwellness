@@ -10,13 +10,16 @@
 </head>
 <body>
     <h1>Signup for YourWellness</h1>
-    <<form action="http://yourbackenddomain.com/signup" method="post">
+    <form action="https://yourbackenddomain.com/signup" method="post">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
+        <input type="text" id="name" name="name" required>
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password">
+        <input type="password" id="password" name="password" required minlength="8">
+        <label for="password-confirm">Confirm Password:</label>
+        <input type="password" id="password-confirm" name="password-confirm" required>
         <input type="submit" value="Sign Up">
     </form>
+    
     <a href="index.html">Return</a>
 
 </body>
