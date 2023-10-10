@@ -10,17 +10,26 @@
 </head>
 <body>
     <h1>Signup for YourWellness</h1>
-    <form action="https://yourbackenddomain.com/signup" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required minlength="8">
-        <label for="password-confirm">Confirm Password:</label>
-        <input type="password" id="password-confirm" name="password-confirm" required>
-        <input type="submit" value="Sign Up">
-    </form>
-    
+    <form action="https://ssmith200544.github.io/yourwellness/signup.html" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address.">
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8">
+            
+            <label for="password-confirm">Confirm Password:</label>
+            <input type="password" id="password-confirm" name="password-confirm" required>
+            
+            <input type="submit" value="Sign Up">
+        </form>
+        
+    </form>    
     <a href="index.html">Return</a>
+    
+
 
 </body>
 </html>
